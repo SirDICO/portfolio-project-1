@@ -1,0 +1,256 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+body {
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+/* variables */
+
+:root {
+    --accent: rgba(225, 17, 17, 0.925);
+    --white: #ffffff;
+    --secondary: rgb(51, 45, 45);
+    --primary: rgba(94, 94, 174, 0.948);
+
+}
+
+header {
+    width: 100%;
+    background-color: var(--accent);
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: var(--accent);
+    width: 100%;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 20px 0;
+}
+
+#navbar ul li {
+    margin: 0 15px;
+    list-style-type: none;
+
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.3rem;
+}
+
+#welcome-section {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--secondary);
+}
+
+.welcome-data h1 {
+    text-align: center;
+    color: var(--white);
+    padding-top: 20%;
+    font-size: 2.5rem;
+}
+
+.welcome-data h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--accent);
+    font-style: italic;
+
+}
+
+.projects {
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+}
+
+.projects h1 {
+    font-size: 1.5rem;
+    color: var(--white);
+    text-align: center;
+    padding: 15px 0;
+}
+
+.project-grid {
+
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+}
+
+.project-tile {
+    width: 100%;
+    height: 80%;
+}
+
+.project-tile .project-img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.project-tile .project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+    background-color: var(--secondary);
+    padding: 15px 0;
+}
+
+.project-title a h2 {
+    font-size: 1rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.btn {
+    text-align: center;
+    padding: 20px 40px;
+    color: var(--white);
+    background-color: var(--secondary);
+    width: 20%;
+    margin: 20px auto;
+}
+
+@media only screen and (max-width:750px) {
+
+    .btn {
+        width: 30%;
+        font-size: 1.1rem;
+    }
+}
+
+
+/* profile */
+#profile {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--secondary);
+}
+
+.profile .social-btns {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.social-btns li {
+    list-style-type: none;
+    margin: 30px 30px;
+}
+
+.social-btns li .fa {
+    font-size: 4rem;
+    color: var(--accent);
+    border: 2px solid var(--white);
+    padding: 10px 10px;
+    border-radius: 10px 5px;
+}
+
+.social-btns li a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: var(--white);
+    margin: 0 10px;
+}
+
+#profile h1 {
+    font-size: 5rem;
+    color: var(--white);
+    text-align: center;
+    padding-top: 10%;
+}
+
+#profile h2 {
+    font-size: 2.5rem;
+    color: var(--white);
+    font-style: italic;
+    text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+    .profile .social-btns {
+        flex-direction: column;
+
+    }
+
+    .social-btns li .fa {
+        font-size: 2rem;
+
+    }
+
+    .social-btns li a {
+        font-size: 2rem;
+
+    }
+
+    #profile h1 {
+        font-size: 3rem;
+
+    }
+
+    #profile h2 {
+        font-size: 1.5rem;
+
+    }
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 10vh;
+    margin: 0 auto;
+    background-color: var(--secondary);
+}
+
+footer .line {
+    height: 10px;
+    width: 100%;
+    background-color: var(--accent);
+}
+
+footer .footer-data {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+footer .copyright {
+    color: var(--white);
+    font-size: 1.3rem;
+    text-align: center;
+
+}
+
+.source a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1rem;
+    margin-right: 10px;
+}
